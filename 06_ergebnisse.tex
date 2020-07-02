@@ -1,0 +1,93 @@
+\section{Ergebnisse}
+\label{sec:ergebnisse}
+\subsection{Berechnung des Apparatekorrekturfaktors}
+
+Der Apparatekorrekturfaktor K$_{\text{Ka}}$ berechnet sich aus dem Verhältnis des theoretischen Wertes für de Oberflächenspannung des bidestillierten Wasers bei \SI{20}{\degreeCelsius} zum am Tensiometer abgelesenen Wert. Die Berechnung mit den für diesen Versuch gültigen Werten ist in Gleichung \eqref{Kkal} dargestellt. Der $abgelesene Wert$ stammt aus der Messreihe zur Kalibrierung bei \SI{20}{\degreeCelsius}, welche auf dem Angehängten Deckblatt zum Versuch einzusehen ist.
+
+\begin{flalign}\label{Kkal}
+	\text{K}_{\text{Ka}}&=\frac{theoretischer Wert}{abgelesener Wert}\\
+	&=\frac{\SI{72,8}{\milli\newton\per\meter}}{\SI{70,0}{\milli\newton\per\meter}}\\
+	&=\underline{\underline{1,04}}
+\end{flalign}
+
+
+\subsection{Einwaagen und Volumina der hergestellten Lösungen}
+
+\begin{table}[h!]
+	\centering
+	\caption{Massen und Volumina der zur Herstellung der Lösungen verwendeten Chemikalien}
+	\label{tab:Einwaagen}
+	%\resizebox{12.6cm}{!}{
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+	\multirow{ 2}{*}{\textbf{Stoff}} & \textbf{Zielkonzentration } & \textbf{Einwaage}  & \textbf{Volumen} \\ 
+		&[\si{\mole\per\liter}]&[\si{\gram}]&[\si{\milli\liter}]\\
+		\hline
+		Ethanol & 0,1 & - & 0,58\\ 
+		Natriumchlorid& 0,1 & 0,58433 &-\\ 
+		Natriumdodecylsulfat (\SI{10}{\gram\per\liter})& 0,001& -&0,28\\
+		\hline
+		
+	\end{tabular}
+	%	}
+\end{table}
+\FloatBarrier
+\vspace*{-2.5mm}
+%Tabelle Ende
+\subsection{Korrektur der abgelesenen Oberflächenspannungen}
+
+Die Korrektur der abgelesenen Oberflächenspannungen ($\sigma^\ast$) erfolgt durch die Multiplikation mit dem Apparatekorrekturfaktor (K$_{\text{Ka}}$) und dem Korrekturfaktor nach \textsc{Harkins \& Jordan} (K). Letzterer Korrekturfaktor wurde aus der, der Versuchsanleitung angehängten, Tabelle 01 entnommen. In den Fällen, wo ein Wert nicht passend eingetragen war, wurde der dem gesuchten Wert am nächsten liegende genutzt.
+
+Die Korrekturen erfolgten analog der Rechnung in Gleichung \eqref{korrektur}.
+
+\begin{flalign}\label{korrektur}
+	\sigma&=\sigma^\ast*\text{K}_{\text{Ka}}*\text{K}\\
+	&=\SI{69,8}{\milli\newton\per\meter}*1,04*0,996\\
+	&=\underline{\underline{\SI{72,30}{\milli\newton\per\meter}}}
+\end{flalign}
+
+\subsection{Prüfung auf Ausreißer}
+
+Das Kriterium für einen Ausreißer wurde als Abweichung um mehr als die dreifache Standardabweichung vom Mittelwert definiert ($\pm 3*\sigma$). Es wurde ein Ausreißer gefunden. Es handelt sich um den dritten Messwert zum Einfluss des Geschirrspülmittels. Dieser wurde daher gestrichen.
+
+\subsection{Probe auf linearen Zusammenhang}
+
+Durch auftragen der gemessenen und korrigierten Oberflächenspannungen des destillierten Wassers über der Temperatur wird ein Graph erzeugt, welcher es erlaubt, eine Aussage über die Linearität der Messpunkte, zu treffen.
+
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{0.8\textwidth}{!}{
+			\begin{tikzpicture}[trim axis left, trim axis right]
+			\begin{axis}[
+			axis lines = left,
+			width = 15cm,
+			height = 11cm,
+			xmin = 0,
+			xmax = 67,
+			ymin = 66,
+			ymax = 74.5,
+				ytick = {50,51,...,74},
+				xtick = {0,5,...,65},
+			ylabel={Oberflächenspannung in \si{\milli \newton \per \meter}},
+			%y label style={at={(0,0.5)}},
+			xlabel={Temperatur in \si{\celsius}},
+			legend style={at={(0.35,0.9)},anchor=west},
+			%	y dir = reverse,
+			]				
+			\addplot [color=black, mark=*] coordinates{(20,72.5) (30,72.198)  (40,70.41) (60,67.19) };
+			
+			\addplot +[mark=none, dashed, black, domain=15:65] {-0.1400728183*x + 75.830567};
+			
+			
+			
+			\legend{gemittelte und korrigierte Oberflächenspannungen, Regressionsgerade $\sigma=-\SI{0,1400}{}*T + \SI{75.83}{} \, | \, R^2$ = \SI{0,962}{}}
+			\end{axis}
+			\end{tikzpicture}}
+		\caption{Oberflächenspannung des Wassers in Abhängigkeit der Temperatur}
+		\label{dia:oberflaechenT}
+	\end{center}
+\end{figure}
+\FloatBarrier
+
+
+Diskussion- ersten beiden selbst aufgenommen, schlecht kalibriert, letzte Beiden gegeben. Korrektur-kalibrierungsfehler steht schon in Fehlerbetrachtung.
