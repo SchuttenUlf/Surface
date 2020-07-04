@@ -48,7 +48,7 @@ Die Korrekturen erfolgten analog der Rechnung in Gleichung \eqref{korrektur}.
 
 \subsection{Prüfung auf Ausreißer}
 
-Das Kriterium für einen Ausreißer wurde als Abweichung um mehr als die dreifache Standardabweichung vom Mittelwert definiert ($\pm 3*\sigma$). Es wurde ein Ausreißer gefunden. Es handelt sich um den dritten Messwert zum Einfluss des Geschirrspülmittels. Dieser wurde daher gestrichen.
+Das Kriterium für einen Ausreißer wurde als Abweichung um mehr als die dreifache Standardabweichung vom Mittelwert definiert ($\pm 3*s$). Es wurde ein Ausreißer gefunden. Es handelt sich um den dritten Messwert zum Einfluss des Geschirrspülmittels. Dieser wurde daher gestrichen.
 
 \subsection{Probe auf linearen Zusammenhang}
 
@@ -89,5 +89,31 @@ Durch auftragen der gemessenen und korrigierten Oberflächenspannungen des desti
 \end{figure}
 \FloatBarrier
 
+Die Geradenparameter der Regressionsgerade der Abbildung \ref{dia:oberflaechenT} sind in
 
-Diskussion- ersten beiden selbst aufgenommen, schlecht kalibriert, letzte Beiden gegeben. Korrektur-kalibrierungsfehler steht schon in Fehlerbetrachtung.
+\begin{table}[h!]
+	\centering
+	\caption{Ermittelte Geradenparameter zur Beschreibung der Oberflächenspannung von Wasser in Abhängigkeit von der Temperatur in \si{\degreeCelsius}}
+	\label{tab:ab}
+	%\resizebox{12.6cm}{!}{
+		\begin{tabular}{|c|c|}
+			\hline
+			a&-0,1400\\
+		\hline
+			b&75,8306\\
+			\hline
+			
+		\end{tabular}
+	%}
+\end{table}
+\FloatBarrier
+\vspace*{-2.5mm}
+%Tabelle Ende
+
+Die Oberflächenspannung des Wassers bei \SI{90}{\degreeCelsius} kann durch Einsetzen in die, aus den Geradenparametern erzeugte Funktion, ermittelt werden. Sie Beträgt \SI{63,23}{\milli\newton\per\meter}. Die Rechnung ist als Gleichung \eqref{gl:90grad} nachfolgend aufgeführt. 
+
+\begin{flalign}\label{gl:90grad}
+	\sigma&=-0.1400*T[\si{\degreeCelsius}] + 75.8306\\
+	&=-0.1400*90 + 75.8306\\
+	&=\underline{\underline{\SI{63,23}{\milli\newton\per\meter}}}
+\end{flalign}

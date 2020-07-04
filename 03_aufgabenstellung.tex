@@ -20,3 +20,25 @@ Es existieren einige Möglichkeiten die Oberflächenspannung zu bestimmen. Hier 
 	\sigma=\sigma^\ast*\text{K}_{\text{Ka}}*\text{K}
 \end{equation}
 
+Die statistischen Berechnungen zur Versuchsauswertung basieren auf dem Mittelwert und der Standardabweichung entsprechend der Formeln \eqref{Gl:Mittelwert} und \eqref{Gl:standardabweichung}.
+
+\begin{flalign}
+\label{Gl:Mittelwert}
+\bar{x} &= \frac{\sum_{n=1}^{N}x_n}{N}
+\end{flalign}
+
+
+\begin{flalign}\label{Gl:standardabweichung}
+s &= \sqrt{\frac{\sum_{n=1}^{N}(x_n-\bar{x})^2}{N-1}}
+\end{flalign}
+
+Ein Ausreißer ist ein Messwert der überdurchschnittlich stark vom Rest der Messwerte Abweicht, und das Endergebnis dadurch verfälscht. In diesem Fall werden Messwerte dann als Ausreißer angenommen, wenn sie um die dreifache Standardabweichung von berechneten Mittelwert abweichen. Die unteren und oberen Vertrauensgrenzen berechnen sich dann entsprechend der Formeln \eqref{gl:ausu} und \eqref{gl:auso}.
+
+\begin{equation}\label{gl:ausu}
+\text{untere Vertrauensgrenze }=\bar{x} - 3*s
+\end{equation}
+
+\begin{equation}\label{gl:auso}
+\text{obere Vertrauensgrenze} =\bar{x} + 3*s
+\end{equation}
+
