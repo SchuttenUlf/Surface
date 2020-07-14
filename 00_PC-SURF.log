@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.20)  4 JUL 2020 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.20)  14 JUL 2020 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2170,11 +2170,6 @@ File: deckblatt.pdf Graphic file (type pdf)
  <use deckblatt.pdf, page 1>
 Package pdftex.def Info: deckblatt.pdf, page1 used on input line 5.
 (pdftex.def)             Requested size: 597.63528pt x 845.54323pt.
- [10
-
-
-
-]
 File: deckblatt.pdf Graphic file (type pdf)
 
 <use deckblatt.pdf, page 1>
@@ -2189,8 +2184,12 @@ File: deckblatt.pdf Graphic file (type pdf)
 <use deckblatt.pdf, page 1>
 Package pdftex.def Info: deckblatt.pdf, page1 used on input line 5.
 (pdftex.def)             Requested size: 597.63528pt x 845.54323pt.
- [11 <./deckblatt.pdf>]
-<deckblatt.pdf, id=69, page=2, 597.03343pt x 844.83629pt>
+ [10
+
+
+
+ <./deckblatt.pdf>]
+<deckblatt.pdf, id=66, page=2, 597.03343pt x 844.83629pt>
 File: deckblatt.pdf Graphic file (type pdf)
 
 <use deckblatt.pdf, page 2>
@@ -2205,7 +2204,7 @@ File: deckblatt.pdf Graphic file (type pdf)
 <use deckblatt.pdf, page 2>
 Package pdftex.def Info: deckblatt.pdf, page2 used on input line 5.
 (pdftex.def)             Requested size: 597.533pt x 845.54323pt.
- [12 <./deckblatt.pdf>])
+ [11 <./deckblatt.pdf>])
 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
@@ -2218,7 +2217,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
 Here is how much of TeX's memory you used:
  44109 strings out of 493029
  999846 string characters out of 6136234
- 1205238 words of memory out of 5000000
+ 1205256 words of memory out of 5000000
  46897 multiletter control sequences out of 15000+600000
  99841 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2234,10 +2233,10 @@ nts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on 00_PC-SURF.pdf (13 pages, 1610764 bytes).
+Output written on 00_PC-SURF.pdf (12 pages, 1610507 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
